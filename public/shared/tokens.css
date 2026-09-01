@@ -1,0 +1,42 @@
+:root {
+  /* superfícies, do fundo da página (0) até o elemento mais elevado (4) */
+  --bg0: #0a0d0c;
+  --bg1: #101413;
+  --bg2: #171d1b;
+  --bg3: #212925;
+  --bg4: #2c3733;
+  --line: #263029;
+
+  /* texto, do mais contrastado (1) ao mais apagado (3) */
+  --t1: #eef3f0;
+  --t2: #a9b8b1;
+  --t3: #6f8079;
+
+  /* paletas semânticas: base / fundo suave / borda suave */
+  --grn: #34d399; --grn-soft: #12261d; --grn-line: #1f4d38;
+  --amb: #f5b942; --amb-soft: #2b220d; --amb-line: #59461b;
+  --red: #f2685c; --red-soft: #2c1613; --red-line: #5c2620;
+  --blu: #7c9cf0; --blu-soft: #181d33; --blu-line: #31396b;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+
+  --font-sans: ui-sans-serif, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  --shadow-1: 0 1px 2px rgba(0, 0, 0, .3), 0 8px 24px -10px rgba(0, 0, 0, .55);
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  background: var(--bg0);
+  color: var(--t1);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; }
+button, input, select, textarea { font-family: inherit; }
+::selection { background: var(--blu-line); color: var(--t1); }
